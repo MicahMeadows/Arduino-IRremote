@@ -314,7 +314,7 @@ void disableLEDFeedback() {}; // dummy function for examples
  * Macros for legacy compatibility
  */
 #define RAWBUF  101  // Maximum length of raw duration buffer
-#define REPEAT 0xFFFFFFFF
+static const int REPEAT = 0xFFFFFFFF;
 #define USECPERTICK MICROS_PER_TICK
 #define MARK_EXCESS MARK_EXCESS_MICROS
 
